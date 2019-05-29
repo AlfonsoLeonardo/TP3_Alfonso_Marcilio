@@ -1,25 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+using Acceso_Datos;
 
 
-namespace appGrupal
-{
-    public partial class _Default : Page
+
+    public class BuscaVoucher
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            
-            Response.Redirect("articulos.aspx");
-        }
 
         public bool validarVoucher(string voucher)
         {
@@ -35,7 +26,7 @@ namespace appGrupal
                 conexion.ejecutarConsulta();
                 if (conexion.Lector.Read())
                 {
-                    return true;
+                     return true;
                 }
                 else
                 {
@@ -50,4 +41,5 @@ namespace appGrupal
 
 
     }
-}
+
+

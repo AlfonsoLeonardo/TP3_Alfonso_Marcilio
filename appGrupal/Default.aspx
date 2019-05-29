@@ -17,7 +17,7 @@
                     <small id="emailHelp" class="form-text text-muted">Revise el dorso de su cupon intangible</small>
 
                 </div>
-            //
+            
           
                 <asp:Button ID="Button1" runat="server" Text="Ingresar" class="btn btn-primary" OnClick="Button1_Click" />
             
