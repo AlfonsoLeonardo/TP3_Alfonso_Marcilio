@@ -13,8 +13,20 @@
             <asp:TextBox ID="TextApell" class="form-control" runat="server" ></asp:TextBox>
         </div>
         <div class="form-group col-3">
+        </div>
+        <div class="form-group col">
+        </div>
+        <div class="form-group col">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-3">
             <label>Email</label>
             <asp:TextBox ID="TextMail" type="email" class="form-control" runat="server" ></asp:TextBox>
+        </div>
+        <div class="form-group col-2">
+            <label>DNI</label>
+            <asp:TextBox ID="TextDni" type="email" class="form-control" runat="server" ></asp:TextBox>
         </div>
         <div class="form-group col">
         </div>
