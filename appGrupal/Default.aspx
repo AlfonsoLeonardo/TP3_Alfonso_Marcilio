@@ -23,8 +23,14 @@
             
         </div>
         <div class="col-4">
+
+            
         </div>        
     </div>
-  
-
+    <div>
+        <div class="alert alert-danger" role="alert" runat="server" id="alerta" >
+         No exite el voucher!
+        </div>
+    </div>
+    
 </asp:Content>

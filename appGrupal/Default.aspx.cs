@@ -4,12 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
+using Dominio;
+using AccesoDatos;
 
 
 namespace appGrupal
 {
+    
+    
     public partial class _Default : Page
     {
+        VoucherNegocio VoucherNegocio = new VoucherNegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -17,36 +23,18 @@ namespace appGrupal
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            if (VoucherNegocio.validarVoucher(TextBox1.Text) == true)
+            { 
             Response.Redirect("articulos.aspx");
+            }
+            else
+            {
+                alerta.Visible = false;
+            }
+            
         }
 
-        public bool validarVoucher(string voucher)
-        {
 
-            AccesoDatosManager conexion;
-            try
-            {
-                conexion = new AccesoDatosManager();
-                conexion.setearConsulta("select codigovoucher from vouchers Where codigovoucher=@voucher");
-                conexion.Comando.Parameters.Clear();
-                conexion.Comando.Parameters.AddWithValue("@voucher", voucher);
-                conexion.abrirConexion();
-                conexion.ejecutarConsulta();
-                if (conexion.Lector.Read())
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
 
 
     }
