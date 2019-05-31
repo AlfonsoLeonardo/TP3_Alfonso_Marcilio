@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominio;
+using Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +11,11 @@ namespace appGrupal
 {
     public partial class Formulario_web1 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        public List<Producto> articulos = new List<Producto>();
 
+        public void Page_Load(object sender, EventArgs e)
+        {
+            articulos = (new ArticuloNegocio().MostrarArticulos());
         }
     }
 }

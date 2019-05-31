@@ -30,11 +30,12 @@ namespace appGrupal
         {
             if (VoucherNegocio.validarVoucher(TextBox1.Text) == true)
             { 
+                
             Response.Redirect("articulos.aspx");
             }
             else
             {
-                alerta.Visible = false;
+                alerta.Style["display"]="visible";
             }
             
         }

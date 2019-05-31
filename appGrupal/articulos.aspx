@@ -1,21 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="articulos.aspx.cs" Inherits="appGrupal.Formulario_web1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        
-
-        <div class="card-deck">
-            
+    <div class="row">
+  
+     <% foreach (var articulo in articulos) { %>
+        <div class="col-sm-4">
             <div class="card">
-                <asp:Image ID="Image3" runat="server" class="card-img-top" alt="..." ImageUrl="~/img/tv_led.jpg" />
+                <img ID="Image3" class="card-img-top" alt="..." src="<%= articulo.URLImagen %>" />
                 <div class="card-body">
-                    <h5 class="card-title">Tv Led 55"</h5>
-                    <p class="card-text">Una TV grande, para ver al mas grande: Chiche Gelblung</p>
-                    <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Quiero este" />
+                    <h5 class="card-title"><%= articulo.Titulo %></h5>
+                    <p class="card-text"><%= articulo.Descripcion %></p>
+                    <button ID=" <%= articulo.Id %> "  class="btn btn-primary">Quiero este</button>
                 </div>
             </div>
-            
+            </div>
+             <% } %>
         </div>
-
-
-    </div>
 </asp:Content>

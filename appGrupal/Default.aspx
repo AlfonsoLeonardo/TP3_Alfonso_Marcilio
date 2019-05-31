@@ -28,7 +28,7 @@
         </div>        
     </div>
     <div>
-        <div class="alert alert-danger" role="alert" runat="server" id="alerta" >
+        <div class="alert alert-danger" role="alert" runat="server" id="alerta" style="display:none">
          No exite el voucher!
         </div>
     </div>

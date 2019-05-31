@@ -17,7 +17,6 @@ namespace Negocio
             {
                
                 List<Producto> listado = new List<Producto>();
-                Producto producto = new Producto();
 
                 conexion = new AccesoDatosManager();
                 conexion.setearConsulta("select * from productos");
@@ -30,6 +29,7 @@ namespace Negocio
                 conexion.ejecutarConsulta();
                 while (conexion.Lector.Read())
                 {
+                    Producto producto = new Producto();
 
                     producto.Id = (long)conexion.Lector["id"];
                     producto.Titulo = conexion.Lector["titulo"].ToString();
