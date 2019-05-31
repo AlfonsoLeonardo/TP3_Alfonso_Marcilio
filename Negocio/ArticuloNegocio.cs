@@ -24,6 +24,8 @@ namespace Negocio
                 conexion.Comando.Parameters.Clear();
                 //conexion.Comando.Parameters.AddWithValue("@Dni", Dni);
 
+                string temp = "";
+
                 conexion.abrirConexion();
                 conexion.ejecutarConsulta();
                 while (conexion.Lector.Read())
