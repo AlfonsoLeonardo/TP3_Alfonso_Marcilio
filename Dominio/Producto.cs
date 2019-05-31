@@ -13,5 +13,6 @@ namespace Dominio
         public string Descripcion { get; set; }
         public string URLImagen { get; set; }
 
+        public static Producto productoenlinea { get; set; }
     }
 }

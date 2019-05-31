@@ -15,6 +15,7 @@ namespace Dominio
         public long Idproducto { get; set; }
         public DateTime Fecharegistro { get; set; }
 
+        public static Voucher voucherenlinea { get; set; }
 
     }
 }
