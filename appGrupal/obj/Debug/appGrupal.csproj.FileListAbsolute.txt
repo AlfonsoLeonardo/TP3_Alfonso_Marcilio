@@ -318,3 +318,9 @@ C:\Users\gaston.marcilio\Desktop\Repositorio\TP3_Alfonso_Marcilio\appGrupal\obj\
 C:\Users\gaston.marcilio\Desktop\Repositorio\TP3_Alfonso_Marcilio\appGrupal\obj\Debug\appGrupal.csproj.CopyComplete
 C:\Users\gaston.marcilio\Desktop\Repositorio\TP3_Alfonso_Marcilio\appGrupal\obj\Debug\appGrupal.dll
 C:\Users\gaston.marcilio\Desktop\Repositorio\TP3_Alfonso_Marcilio\appGrupal\obj\Debug\appGrupal.pdb
+C:\Users\Gaston\Documents\GitHub\TP3_Alfonso_Marcilio\appGrupal\bin\AccesoDatos.dll
+C:\Users\Gaston\Documents\GitHub\TP3_Alfonso_Marcilio\appGrupal\bin\Dominio.dll
+C:\Users\Gaston\Documents\GitHub\TP3_Alfonso_Marcilio\appGrupal\bin\Negocio.dll
+C:\Users\Gaston\Documents\GitHub\TP3_Alfonso_Marcilio\appGrupal\bin\AccesoDatos.pdb
+C:\Users\Gaston\Documents\GitHub\TP3_Alfonso_Marcilio\appGrupal\bin\Dominio.pdb
+C:\Users\Gaston\Documents\GitHub\TP3_Alfonso_Marcilio\appGrupal\bin\Negocio.pdb
