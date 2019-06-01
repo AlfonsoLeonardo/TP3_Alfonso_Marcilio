@@ -15,7 +15,7 @@ namespace appGrupal
 
         public void Page_Load(object sender, EventArgs e)
         {
-            articulos = (new ArticuloNegocio().MostrarArticulos());
+            articulos = (new ProductoNegocio().MostrarArticulos());
         }
     }
 }

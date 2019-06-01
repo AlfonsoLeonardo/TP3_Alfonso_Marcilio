@@ -18,7 +18,7 @@ namespace appGrupal
         VoucherNegocio VoucherNegocio = new VoucherNegocio();
         Producto producto = new Producto();
         List<Producto> listado = new List<Producto>();
-        ArticuloNegocio articulo = new ArticuloNegocio();
+        ProductoNegocio articulo = new ProductoNegocio();
 
 
         protected void Page_Load(object sender, EventArgs e)

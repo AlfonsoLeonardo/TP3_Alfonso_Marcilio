@@ -8,7 +8,7 @@ using Dominio;
 
 namespace Negocio
 {
-    public class ArticuloNegocio
+    public class ProductoNegocio
     {
         public List<Producto> MostrarArticulos()
         {
@@ -21,10 +21,6 @@ namespace Negocio
                 conexion = new AccesoDatosManager();
                 conexion.setearConsulta("select * from productos");
                 conexion.Comando.Parameters.Clear();
-                //conexion.Comando.Parameters.AddWithValue("@Dni", Dni);
-
-                string temp = "";
-
                 conexion.abrirConexion();
                 conexion.ejecutarConsulta();
                 while (conexion.Lector.Read())
