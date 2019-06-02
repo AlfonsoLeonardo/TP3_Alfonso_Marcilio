@@ -11,11 +11,11 @@ namespace appGrupal
 {
     public partial class Formulario_web1 : System.Web.UI.Page
     {
-        public List<Producto> articulos = new List<Producto>();
+        public List<Producto> Productos = new List<Producto>();
 
         public void Page_Load(object sender, EventArgs e)
         {
-            articulos = (new ProductoNegocio().MostrarArticulos());
+            Productos = (new ProductoNegocio().MostrarProductos());
         }
     }
 }

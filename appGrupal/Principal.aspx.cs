@@ -18,12 +18,12 @@ namespace appGrupal
         VoucherNegocio VoucherNegocio = new VoucherNegocio();
         Producto producto = new Producto();
         List<Producto> listado = new List<Producto>();
-        ProductoNegocio articulo = new ProductoNegocio();
+        ProductoNegocio Producto = new ProductoNegocio();
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            articulo.MostrarArticulos();
+            Producto.MostrarProductos();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace appGrupal
             if (VoucherNegocio.validarVoucher(TextBox1.Text) == true)
             { 
                 
-            Response.Redirect("articulos.aspx");
+            Response.Redirect("Producto.aspx");
             }
             else
             {

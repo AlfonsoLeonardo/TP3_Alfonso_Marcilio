@@ -10,7 +10,7 @@ namespace Negocio
 {
     public class ProductoNegocio
     {
-        public List<Producto> MostrarArticulos()
+        public List<Producto> MostrarProductos()
         {
             AccesoDatosManager conexion;
             try

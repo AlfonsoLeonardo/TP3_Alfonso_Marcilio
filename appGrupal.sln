@@ -5,11 +5,6 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appGrupal", "appGrupal\appGrupal.csproj", "{E17BF9AD-67B8-43C3-B9C4-CD4F45D2DC09}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{277162A2-AB7B-482A-BF24-3315F2AB51C3}"
-	ProjectSection(SolutionItems) = preProject
-		BuscaVoucher.cs = BuscaVoucher.cs
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{A215D032-455B-491E-B681-F22ED74E9A24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{6403ED4F-8A6E-4CC2-99E9-FFF169AAC2EB}"
