@@ -17,5 +17,15 @@ namespace appGrupal
         {
             Productos = (new ProductoNegocio().MostrarProductos());
         }
+
+        /*
+        public void btnOK_Click(object sender, EventArgs e)
+        {
+            
+            Response.Redirect("Cliente.aspx");
+            
+
+        }
+        */
     }
 }
