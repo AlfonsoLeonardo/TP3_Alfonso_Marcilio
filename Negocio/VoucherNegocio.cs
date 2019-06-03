@@ -18,7 +18,7 @@ namespace Negocio
             try
             {   
                 conexion = new AccesoDatosManager();
-                conexion.setearConsulta("select * from vouchers Where codigovoucher=@voucher");
+                conexion.setearConsulta("select * from vouchers Where codigovoucher=@voucher and Estado=0");
                 conexion.Comando.Parameters.Clear();
                 conexion.Comando.Parameters.AddWithValue("@voucher", codigo);
                 conexion.abrirConexion();
@@ -53,7 +53,7 @@ namespace Negocio
                 accesoDatos.Comando.Parameters.Clear();
                 accesoDatos.Comando.Parameters.AddWithValue("@IdCliente", Cliente.ClienteExistente.Id);
                 accesoDatos.Comando.Parameters.AddWithValue("@IdProducto",Producto.productoenlinea.Id);
-                accesoDatos.Comando.Parameters.AddWithValue("@Estado", false);
+                accesoDatos.Comando.Parameters.AddWithValue("@Estado", true);
                 accesoDatos.Comando.Parameters.AddWithValue("@FechaRegistro", fecha.ToLocalTime());
    
                 
