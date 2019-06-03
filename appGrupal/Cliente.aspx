@@ -8,7 +8,8 @@
         <div class="form-group">
             <!-- DNI-->
             <label for="DNI" class="control-label">DNI</label>
-            <input type="text" class="form-control" id="DNI" onfocusout="mostrar()" name="DNI" placeholder="12345678" autofocus>
+            <asp:TextBox ID="DNI" runat="server" class="form-control" name="DNI" OnTextChanged="DNI_changed" placeholder="12345678" autofocus></asp:TextBox>
+            <!--<input type="text" class="form-control" id="DNI" onfocusout="mostrar()" name="DNI" placeholder="12345678" autofocus>-->
         </div>
 
         <div class="form-group">
